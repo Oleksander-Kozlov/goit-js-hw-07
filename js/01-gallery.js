@@ -32,7 +32,7 @@ function onClick(evt) {
      document.addEventListener("keydown", closer)
      function closer(event) {
          if (event.code === "Escape") {
-          instance.close();  
+          instance.close(() => document.removeEventListener("keydown", closer));  
         }
         };
  }   
