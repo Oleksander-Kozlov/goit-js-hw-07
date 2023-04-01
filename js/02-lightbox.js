@@ -14,12 +14,3 @@ list.insertAdjacentHTML("beforeend", cards.join(""));
 
 let gallery = new SimpleLightbox(".gallery a", { captionDelay: 250 });
 
-list.addEventListener("click", onClick);
-
-function onClick(evt) {
- 
-    evt.preventDefault();
-      
-gallery.on("show.simplelightbox", function () {});
-};  
-    
